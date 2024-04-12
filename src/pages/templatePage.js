@@ -1,7 +1,8 @@
+import {About} from "./about";
+import {Projects} from "./projects";
 export const TemplatePage = () => {
     return (
         <body id="page-top">
-        /* Masthead*/
         <header className="masthead">
             <div className="container px-4 px-lg-5 h-100">
                 <div className="row gx-4 gx-lg-5 h-100 align-items-center justify-content-center text-center">
@@ -11,129 +12,18 @@ export const TemplatePage = () => {
                     </div>
                     <div className="col-lg-8 align-self-baseline">
                         <p className="text-white-75 mb-5">
-                            <h2>꾸준히 성장하는 사람</h2>
-                            어떤 길고 힘든 순간에도 교훈을 찾아내서 성장하는 개발자입니다.<br/>
+                            <h2>꾸준히 성장하는 인재</h2>
+                            어떤 순간에도 교훈을 찾아내서 성장하는 개발자입니다.<br/>
                             주로 Frontend 개발을 하지만 Backend 및 publishing 개발도 가능하며<br/>
                             다양한 경험을 통해 남들과 차별화 된 새로운 관점을 제시하고자 합니다.
                         </p>
-                        <a className="btn btn-primary btn-xl" href="#about">Find Out More</a>
+                        {/*<a className="btn btn-primary btn-xl" href="#about">Find Out More</a>*/}
                     </div>
                 </div>
             </div>
         </header>
-        /* About*/
-        <section className="page-section bg-primary" id="about">
-            <div className="container px-4 px-lg-5">
-                <div className="row gx-4 gx-lg-5 justify-content-center">
-                    <div className="col-lg-8 text-center">
-                        <h2 className="text-white mt-0">We've got what you need!</h2>
-                        <hr className="divider divider-light"/>
-                        <p className="text-white-75 mb-4">Start Bootstrap has everything you need to get your new
-                            website up and running in no time! Choose one of our open source, free to download, and easy
-                            to use themes! No strings attached!</p>
-                        <a className="btn btn-light btn-xl" href="#services">Get Started!</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        /* Services*/
-        <section className="page-section" id="services">
-            <div className="container px-4 px-lg-5">
-                <h2 className="text-center mt-0">At Your Service</h2>
-                <hr className="divider"/>
-                <div className="row gx-4 gx-lg-5">
-                    <div className="col-lg-3 col-md-6 text-center">
-                        <div className="mt-5">
-                            <div className="mb-2"><i className="bi-gem fs-1 text-primary"></i></div>
-                            <h3 className="h4 mb-2">Sturdy Themes</h3>
-                            <p className="text-muted mb-0">Our themes are updated regularly to keep them bug free!</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 text-center">
-                        <div className="mt-5">
-                            <div className="mb-2"><i className="bi-laptop fs-1 text-primary"></i></div>
-                            <h3 className="h4 mb-2">Up to Date</h3>
-                            <p className="text-muted mb-0">All dependencies are kept current to keep things fresh.</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 text-center">
-                        <div className="mt-5">
-                            <div className="mb-2"><i className="bi-globe fs-1 text-primary"></i></div>
-                            <h3 className="h4 mb-2">Ready to Publish</h3>
-                            <p className="text-muted mb-0">You can use this design as is, or you can make changes!</p>
-                        </div>
-                    </div>
-                    <div className="col-lg-3 col-md-6 text-center">
-                        <div className="mt-5">
-                            <div className="mb-2"><i className="bi-heart fs-1 text-primary"></i></div>
-                            <h3 className="h4 mb-2">Made with Love</h3>
-                            <p className="text-muted mb-0">Is it really open source if it's not made with love?</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        /* Portfolio*/
-        <div id="portfolio">
-            <div className="container-fluid p-0">
-                <div className="row g-0">
-                    <div className="col-lg-4 col-sm-6">
-                        <a className="portfolio-box" href="/assets/img/portfolio/fullsize/1.jpg" title="Project Name">
-                            <img className="img-fluid" src="/assets/img/portfolio/thumbnails/1.jpg" alt="..."/>
-                            <div className="portfolio-box-caption">
-                                <div className="project-category text-white-50">Category</div>
-                                <div className="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-lg-4 col-sm-6">
-                        <a className="portfolio-box" href="/assets/img/portfolio/fullsize/2.jpg" title="Project Name">
-                            <img className="img-fluid" src="/assets/img/portfolio/thumbnails/2.jpg" alt="..."/>
-                            <div className="portfolio-box-caption">
-                                <div className="project-category text-white-50">Category</div>
-                                <div className="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-lg-4 col-sm-6">
-                        <a className="portfolio-box" href="/assets/img/portfolio/fullsize/3.jpg" title="Project Name">
-                            <img className="img-fluid" src="/assets/img/portfolio/thumbnails/3.jpg" alt="..."/>
-                            <div className="portfolio-box-caption">
-                                <div className="project-category text-white-50">Category</div>
-                                <div className="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-lg-4 col-sm-6">
-                        <a className="portfolio-box" href="/assets/img/portfolio/fullsize/4.jpg" title="Project Name">
-                            <img className="img-fluid" src="/assets/img/portfolio/thumbnails/4.jpg" alt="..."/>
-                            <div className="portfolio-box-caption">
-                                <div className="project-category text-white-50">Category</div>
-                                <div className="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-lg-4 col-sm-6">
-                        <a className="portfolio-box" href="/assets/img/portfolio/fullsize/5.jpg" title="Project Name">
-                            <img className="img-fluid" src="/assets/img/portfolio/thumbnails/5.jpg" alt="..."/>
-                            <div className="portfolio-box-caption">
-                                <div className="project-category text-white-50">Category</div>
-                                <div className="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-lg-4 col-sm-6">
-                        <a className="portfolio-box" href="/assets/img/portfolio/fullsize/6.jpg" title="Project Name">
-                            <img className="img-fluid" src="/assets/img/portfolio/thumbnails/6.jpg" alt="..."/>
-                            <div className="portfolio-box-caption p-3">
-                                <div className="project-category text-white-50">Category</div>
-                                <div className="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <About></About>
+        <Projects></Projects>
         /* Call to action*/
         <section className="page-section bg-dark text-white">
             <div className="container px-4 px-lg-5 text-center">

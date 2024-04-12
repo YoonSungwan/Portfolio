@@ -29,6 +29,7 @@ export const Head = () => {
                     </ul>
                 </div>
             </div>
+
         </nav>
     )
     ;

@@ -1,11 +1,28 @@
 
 export const About = () => {
     return (
-        <div>
-            <h2>꾸준히 성장하는 사람</h2>
-            <p>어떤 길고 힘든 순간에도 교훈을 찾아내서 성장하는 개발자입니다.</p>
-            <p>주로 Frontend 개발을 하지만 Backend 및 publishing 개발도 가능하며</p>
-            <p>다양한 경험을 통해 남들과 차별화 된 새로운 관점을 제시하고자 합니다.</p>
-        </div>
-    );
+        <section className="page-section bg-primary" id="about">
+            <div className="container px-4 px-lg-5">
+                <div className="row gx-4 gx-lg-5 justify-content-center">
+                    <div className="col-lg-8 text-center">
+                        <h2 className="text-white mt-0">About</h2>
+                        <hr className="divider divider-light"/>
+                        <p className="text-white-75 mb-4">
+                            <h2>이름</h2>
+                            <p>윤성완</p>
+                            <h2>나이</h2>
+                            <p>만30세</p>
+                            <h2>연락처</h2>
+                            <p>010</p>
+                            <h2>이메일</h2>
+                            <p>sungwanyoon@gmail.com</p>
+                            <h2>Github</h2>
+                            <p>https://github.com/YoonSungwan</p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+)
+    ;
 }
