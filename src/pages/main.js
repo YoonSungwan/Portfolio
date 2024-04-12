@@ -1,10 +1,18 @@
 import React from "react";
-import {Head} from "./head";
+import {About} from "./about";
+import {Skills} from "./skills";
+import {Projects} from "./projects";
+import {Contact} from "./contact";
+import {TemplatePage} from "./templatePage";
 
 export const Main = () => {
     return (
-        <div className="wrap">
-            포폴 만드는 중
-        </div>
+        <TemplatePage></TemplatePage>
+        // <div className="wrap">
+        //     <About/>
+        //     <Skills/>
+        //     <Projects/>
+        //     <Contact/>
+        // </div>
     );
 };
