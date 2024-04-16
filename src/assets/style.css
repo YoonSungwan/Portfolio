@@ -1,40 +1,67 @@
-body {
-    background-color: black;
-    color: white;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.wrap {
-    width: 80%;
-    margin: 0 auto;
+.personal-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
     padding: 20px;
 }
 
-.content {
-    padding: 20px;
+.info-item {
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 10px;
 }
 
-.header {
-    background-color: black;
-    color: white;
-    padding: 20px 0;
-}
-
-.menu {
-    display: flex;
-    justify-content: center;
-}
-
-.menu-item {
-    margin: 0 20px;
-    text-transform: uppercase;
+.info-label {
     font-weight: bold;
-    font-size: 18px;
-    cursor: pointer;
+    font-size: 30px;
+    color: #3dd5f3;
+    margin: 0.5rem;
 }
 
-.menu-item:hover {
-    color: gray; /* 마우스 호버 시 색상 변경 */
+.info-value {
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.diverSkill {
+    height: 0.1rem;
+    max-width: 12rem;
+    margin: 0.8rem auto;
+    background-color: #00388b;
+    opacity: 1;
+}
+
+.contactValue {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.frontSkill, .endSkill, .etcSkill {
+    width: 250px;
+    height: 360px;
+    background-color: white;
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.frontSkill img, .endSkill img {
+    margin-top: 10px;
+}
+
+.imgBox_two, .imgBox {
+    margin: 20px;
+}
+
+.imgBox_two img {
+    height: 80px;
+}
+
+.imgBox img {
+    width: 75%;
+    height: 100%;
+    transition: 0.5s ease;
+}
+
+.personal-info img:hover {
+    transform: scale(1.3);
 }

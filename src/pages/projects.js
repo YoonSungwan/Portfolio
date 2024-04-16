@@ -1,6 +1,6 @@
 export const Projects = ()  => {
     return (
-        <div id="portfolio">
+        <div id="projects">
             <div className="container-fluid p-0">
                 <div className="row g-0">
                     <div className="col-lg-4 col-sm-6">
@@ -36,24 +36,6 @@ export const Projects = ()  => {
                             <div className="portfolio-box-caption">
                                 <div className="project-category text-white-50">Category</div>
                                 <div className="project-name">목포시 교통정보센터</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-lg-4 col-sm-6">
-                        <a className="portfolio-box" href="/assets/img/portfolio/fullsize/5.jpg" title="Project Name">
-                            <img className="img-fluid" src="/assets/img/portfolio/thumbnails/5.jpg" alt="..."/>
-                            <div className="portfolio-box-caption">
-                                <div className="project-category text-white-50">Category</div>
-                                <div className="project-name">Project Name</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div className="col-lg-4 col-sm-6">
-                        <a className="portfolio-box" href="/assets/img/portfolio/fullsize/6.jpg" title="Project Name">
-                            <img className="img-fluid" src="/assets/img/portfolio/thumbnails/6.jpg" alt="..."/>
-                            <div className="portfolio-box-caption p-3">
-                                <div className="project-category text-white-50">Category</div>
-                                <div className="project-name">Project Name</div>
                             </div>
                         </a>
                     </div>

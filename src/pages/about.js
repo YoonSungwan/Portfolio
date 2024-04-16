@@ -1,28 +1,38 @@
 
 export const About = () => {
     return (
-        <section className="page-section bg-primary" id="about">
+        <section className="page-section" id="about">
             <div className="container px-4 px-lg-5">
-                <div className="row gx-4 gx-lg-5 justify-content-center">
-                    <div className="col-lg-8 text-center">
-                        <h2 className="text-white mt-0">About</h2>
-                        <hr className="divider divider-light"/>
-                        <p className="text-white-75 mb-4">
-                            <h2>이름</h2>
-                            <p>윤성완</p>
-                            <h2>나이</h2>
-                            <p>만30세</p>
-                            <h2>연락처</h2>
-                            <p>010</p>
-                            <h2>이메일</h2>
-                            <p>sungwanyoon@gmail.com</p>
-                            <h2>Github</h2>
-                            <p>https://github.com/YoonSungwan</p>
-                        </p>
+                <h2 className="text-center mt-0">About me</h2>
+                <hr className="divider"/>
+                <div className="row gx-4 gx-lg-5">
+                    <div className="col-lg-3 col-md-6 text-center">
+                        <div className="mt-5">
+                            <h3 className="h4 mb-2">이름</h3>
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-6 text-center">
+                        <div className="mt-5">
+                            <h3 className="h4 mb-2">나이</h3>
+                            <div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-lg-3 col-md-6 text-center">
+                        <div className="mt-5">
+                            <h3 className="h4 mb-2">etc</h3>
+                            <div>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-)
-    ;
+    )
+        ;
 }
