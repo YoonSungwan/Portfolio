@@ -2,7 +2,6 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    padding: 20px;
 }
 
 .info-item {
@@ -36,24 +35,38 @@
     font-weight: bold;
 }
 
-.frontSkill, .endSkill, .etcSkill {
+/*SKills*/
+.frontSkill{
     width: 250px;
-    height: 360px;
+    height: 485px;
+}
+
+.endSkill{
+    width: 250px;
+    height: 290px;
+}
+
+.etcSkill{
+    width: 250px;
+    height: 420px;
+}
+
+.frontSkill, .endSkill, .etcSkill {
     background-color: white;
     border-radius: 1em;
     overflow: hidden;
 }
 
-.frontSkill img, .endSkill img {
-    margin-top: 10px;
-}
-
 .imgBox_two, .imgBox {
-    margin: 20px;
+    margin: 15px;
+    position: relative;
+    display: inline-block;
 }
 
 .imgBox_two img {
+    position: relative;
     height: 80px;
+    transition: 0.5s ease;
 }
 
 .imgBox img {
@@ -62,6 +75,64 @@
     transition: 0.5s ease;
 }
 
-.personal-info img:hover {
-    transform: scale(1.3);
+.skills-caption {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    color: wheat;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease;
+    border-radius: 1em;
+}
+
+.personal-skill {
+    color: red;
+}
+
+.imgBox_two:hover .skills-caption, .imgBox:hover .skills-caption {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.imgBox_two:hover, .imgBox:hover img {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+/*projects*/
+.portfolio-box {
+    position: relative;
+    display: inline-block;
+}
+
+.portfolio-box img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hover-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-box:hover .hover-caption {
+    opacity: 1;
 }

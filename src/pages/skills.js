@@ -12,43 +12,52 @@ export const Skills = () => {
                                     <div className="info-label">Frontend</div>
                                     <hr className="diverSkill"/>
                                     <div className="imgBox_two">
-                                        <img src="../assets/img/portfolio/icons/html-logo.png" alt="html icon" style={{width:"40%"}}/>
-                                        <img src="../assets/img/portfolio/icons/css.png" alt="css icon" style={{width:"27%"}}/>
+                                        <img src="../assets/img/portfolio/icons/html-logo.png" alt="html icon"
+                                             style={{width: "50%"}}/>
+                                        <img src="../assets/img/portfolio/icons/css.png" alt="css icon"
+                                             style={{width: "50%"}}/>
+                                        <div className="skills-caption">실무 사용</div>
+                                    </div>
+                                    <div className="imgBox">
+                                        <img src="../assets/img/portfolio/icons/js-logo.png" alt="js icon"/>
+                                        <div className="skills-caption">실무 사용</div>
                                     </div>
                                     <div className="imgBox">
                                         <img src="../assets/img/portfolio/icons/jquery-logo.png" alt="jquery icon"/>
+                                        <div className="skills-caption">실무 사용</div>
                                     </div>
                                     <div className="imgBox">
                                         <img src="../assets/img/portfolio/icons/React-logo.png" alt="react icon"/>
+                                        <div className="skills-caption personal-skill">개인 숙련</div>
                                     </div>
                                 </div>
                                 <div className="endSkill">
                                     <div className="info-label">Backend</div>
                                     <hr className="diverSkill"/>
                                     <div className="imgBox">
-                                        <img src="../assets/img/portfolio/icons/java_logo.png" alt="java icon"
-                                             style={{width: "50%"}}/>
+                                    <img src="../assets/img/portfolio/icons/java_logo.png" alt="java icon"/>
+                                        <div className="skills-caption">실무 사용</div>
                                     </div>
                                     <div className="imgBox">
                                         <img src="../assets/img/portfolio/icons/Oracle_wordmark.png" alt="oracle icon"/>
-                                    </div>
-                                    <div className="imgBox">
-                                        <img src="../assets/img/portfolio/icons/mariadb-logo.png" alt="mariadb icon"/>
+                                        <div className="skills-caption">실무 사용</div>
                                     </div>
                                 </div>
                                 <div className="etcSkill">
                                     <div className="info-label">Etc</div>
                                     <hr className="diverSkill"/>
                                     <div className="imgBox">
-                                        <img src="../assets/img/portfolio/icons/Git-logo.png" alt="git icon"
-                                             style={{width: "50%"}}/>
+                                        <img src="../assets/img/portfolio/icons/Git-logo.png" alt="git icon"/>
+                                        <div className="skills-caption">실무 사용</div>
                                     </div>
                                     <div className="imgBox">
                                         <img src="../assets/img/portfolio/icons/Apache_Tomcat_logo.png"
                                              alt="apache-tomcat icon"/>
+                                        <div className="skills-caption">실무 사용</div>
                                     </div>
                                     <div className="imgBox">
                                         <img src="../assets/img/portfolio/icons/JEUS-logo.png" alt="jeus icon"/>
+                                        <div className="skills-caption">실무 사용</div>
                                     </div>
                                 </div>
                             </div>
