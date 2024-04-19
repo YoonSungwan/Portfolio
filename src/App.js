@@ -5,14 +5,14 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import {BrowserRouter} from "react-router-dom";
-import {Head} from "./pages/head";
-import {Main} from "./pages/main";
+import {Menu} from "./pages/menu";
+import {TemplatePage} from "./pages/templatePage";
 
 function App() {
   return (
       <BrowserRouter>
-          <Head/>
-          <Main/>
+          <Menu/>
+          <TemplatePage/>
       </BrowserRouter>
   );
 }

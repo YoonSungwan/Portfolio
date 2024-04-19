@@ -1,3 +1,13 @@
+/*Menu*/
+.green-font {
+    color: #8bf382 !important;
+}
+
+.yellow-font {
+    color: rgb(243 238 0 / 70%) !important;
+}
+
+/*SKills*/
 .personal-info {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -35,7 +45,6 @@
     font-weight: bold;
 }
 
-/*SKills*/
 .frontSkill{
     width: 250px;
     height: 485px;
