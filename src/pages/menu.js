@@ -18,10 +18,10 @@ export const Menu = () => {
         const projectsY = document.getElementById("projects").offsetTop;
 
         let chngCls = "";
-        if((scrollHeight >= aboutY && scrollHeight < skillsY) || scrollHeight >= projectsY) {
+        if(scrollHeight >= projectsY) {
             chngCls = "green-font";
-        } else if(scrollHeight >= skillsY && scrollHeight < projectsY) {
-            chngCls = "yellow-font";
+        } else {
+            chngCls = "";
         }
         setNavCls(chngCls);
     }

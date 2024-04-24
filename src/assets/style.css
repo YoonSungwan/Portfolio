@@ -7,6 +7,34 @@
     color: rgb(243 238 0 / 70%) !important;
 }
 
+/*About*/
+.basProf {
+    display: flex;
+    place-content: center;
+}
+
+.basProf .profKey {
+    display: inline-block;
+    width: 10rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 2rem;
+}
+
+.basProf .profVal {
+    display: inline-block;
+    width: 10rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 2rem;
+    text-align: left;
+    color: #2e63e1;
+}
+
+.introduce {
+    font-size: 1.1rem;
+}
+
 /*SKills*/
 .personal-info {
     display: grid;
@@ -140,8 +168,26 @@
     justify-content: center;
     align-items: center;
     transition: opacity 0.3s ease;
+    flex-direction: column;
 }
 
 .portfolio-box:hover .hover-caption {
     opacity: 1;
+}
+
+.project-detail {
+    text-align: center;
+    padding: 1.5rem
+}
+
+@font-face {
+    font-family: 'WAGURITTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2403@1.0/WAGURITTF.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.project-name {
+    font-family: "WAGURITTF";
+    font-size: 1.5rem;
 }
