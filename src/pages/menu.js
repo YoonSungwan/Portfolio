@@ -1,24 +1,36 @@
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Box from '@mui/material/Box';
 import {useEffect, useRef, useState} from "react";
 
-export const Menu = () => {
+export const Menu = (isMobileEvnt) => {
     const [navCls, setNavCls] = useState("");
 
     useEffect(() => {
         window.addEventListener("scroll", onScroll);
+        const navbarToggler = document.querySelector(".navbar-toggler");
+        navbarToggler.addEventListener("click", () => {
+            if(document.getElementById("navbarResponsive").classList.contains("show")) {
+                document.getElementById("navbarResponsive").classList.remove("show");
+            } else {
+                document.getElementById("navbarResponsive").classList.add("show");
+            }
+        });
+        const responsiveNavItems = [].slice.call(
+            document.querySelectorAll('#navbarResponsive .nav-link')
+        );
+        responsiveNavItems.map(function (responsiveNavItem) {
+            responsiveNavItem.addEventListener('click', () => {
+                if (window.getComputedStyle(navbarToggler).display !== 'none') {
+                    navbarToggler.click();
+                }
+            });
+        });
     }, []);
 
     const onScroll = () => {
         const scrollHeight = window.scrollY + 72;
-
-        const aboutY = document.getElementById("about").offsetTop;
-        const skillsY = document.getElementById("skills").offsetTop;
-        const projectsY = document.getElementById("projects").offsetTop;
+        const projectsY = document.querySelectorAll("section")[2].offsetTop;
 
         let chngCls = "";
-        if(scrollHeight >= projectsY) {
+        if((scrollHeight >= projectsY) && (isMobileEvnt.props === "")) {
             chngCls = "green-font";
         } else {
             chngCls = "";
@@ -29,7 +41,7 @@ export const Menu = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div className="container px-4 px-lg-5">
-                <a className={`navbar-brand ${navCls}`} href="#page-top">Frontend Developer</a>
+                <a className={`navbar-brand ${navCls}`} href="#page-top">Sungwan's Portfolio</a>
                 <button className="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                         aria-label="Toggle navigation"><span className="navbar-toggler-icon"></span></button>
