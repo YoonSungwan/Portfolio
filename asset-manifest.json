@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portpolio/static/css/main.6dc1fd80.css",
-    "main.js": "/Portpolio/static/js/main.d59e3ba6.js",
+    "main.css": "/Portpolio/static/css/main.9e9952f5.css",
+    "main.js": "/Portpolio/static/js/main.e4fc87fe.js",
     "static/js/453.1407b060.chunk.js": "/Portpolio/static/js/453.1407b060.chunk.js",
     "static/media/bg-masthead.jpg": "/Portpolio/static/media/bg-masthead.f16c2ada8769e989244c.jpg",
     "static/media/roboto-latin-500-normal.woff2": "/Portpolio/static/media/roboto-latin-500-normal.f25d774ecfe0996f8eb5.woff2",
@@ -61,12 +61,12 @@
     "static/media/roboto-greek-ext-400-normal.woff": "/Portpolio/static/media/roboto-greek-ext-400-normal.f708607d2a7290fb8bfa.woff",
     "static/media/roboto-greek-ext-700-normal.woff": "/Portpolio/static/media/roboto-greek-ext-700-normal.249853776d22a271b2b5.woff",
     "index.html": "/Portpolio/index.html",
-    "main.6dc1fd80.css.map": "/Portpolio/static/css/main.6dc1fd80.css.map",
-    "main.d59e3ba6.js.map": "/Portpolio/static/js/main.d59e3ba6.js.map",
+    "main.9e9952f5.css.map": "/Portpolio/static/css/main.9e9952f5.css.map",
+    "main.e4fc87fe.js.map": "/Portpolio/static/js/main.e4fc87fe.js.map",
     "453.1407b060.chunk.js.map": "/Portpolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6dc1fd80.css",
-    "static/js/main.d59e3ba6.js"
+    "static/css/main.9e9952f5.css",
+    "static/js/main.e4fc87fe.js"
   ]
 }
